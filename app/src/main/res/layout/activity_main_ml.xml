@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bvutest.mlkit.example.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:text="Image Classification"
+                android:onClick="ImageClassificationOnClick"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:text="Image Document Analyzer"
+                android:onClick="ImageDocumentAnalyseOnClick"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:text="Live Face Analyzer"
+                android:onClick="LiveFaceAnalyseOnClick"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:text="Still Face Analyzer"
+                android:onClick="StillFaceAnalyseOnClick"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:text="Image Landmark Analyzer"
+                android:onClick="ImageLandmarkAnalyseOnClick"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:text="Live Object Analyzer"
+                android:onClick="LiveObjectAnalyseOnClick"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                android:text="Image Text Analyzer"
+                android:onClick="ImageTextAnalyseOnClick"></Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

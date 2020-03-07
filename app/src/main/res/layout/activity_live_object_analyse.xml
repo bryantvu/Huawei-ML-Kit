@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".object.LiveObjectAnalyseActivity">
+
+    <com.bvutest.mlkit.example.camera.LensEnginePreview
+        android:id="@+id/object_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.bvutest.mlkit.example.camera.GraphicOverlay
+            android:id="@+id/object_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.bvutest.mlkit.example.camera.LensEnginePreview>
+
+
+    <Button
+        android:id="@+id/object_switch"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/front_back_switch"
+        android:textOff=""
+        android:textOn="" />
+</RelativeLayout>

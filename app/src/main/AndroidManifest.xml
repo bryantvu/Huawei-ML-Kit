@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bvutest.mlkit.example">
+    <!-- add authorization of camera -->
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat"
+        tools:replace="android:allowBackup">
+
+        <activity android:name=".document.ImageDocumentAnalyseActivity"></activity>
+        <activity android:name=".object.LiveObjectAnalyseActivity"></activity>
+        <activity android:name=".landmark.ImageLandmarkAnalyseActivity"></activity>
+        <activity android:name=".face.StillFaceAnalyseActivity"></activity>
+        <activity android:name=".classification.ImageClassificationAnalyseActivity"></activity>
+        <activity android:name=".text.ImageTextAnalyseActivity"></activity>
+		<activity android:name=".face.LiveFaceAnalyseActivity"></activity>
+        <activity android:name="com.bvutest.mlkit.example.menu.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
